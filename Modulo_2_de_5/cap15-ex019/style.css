@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*arquivo style.css*/
+/*Criar um id para formatar separadamente
+    Em HTML é id = em CSS é #
+    Em HTML ´class = em CSS é . 
+*/
+
+body {
+    background-color: rgba(0, 255, 42, 0.589);
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    color: darkgreen;
+}
+h1#principal{
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+}
+h2 {
+    color: darkolivegreen;
+}
+.basico{
+    color: rgb(49, 107, 47);
+}
+.intermediario {
+    color: rgb(4, 0, 255);
+}
+.avancado {
+    color: rgba(238, 10, 10, 0.637);
+}
+.destaque{
+    background-color: yellow;
+}
