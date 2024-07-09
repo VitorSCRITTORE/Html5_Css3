@@ -1,3 +1,4 @@
+<!--Rolagem, Por enquanto funciona apenas no Google Chrome-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,6 +24,14 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        /*Efeito Fixar Título das colunas durante rolagem da tela*/
+        thead > tr > th{
+            position: sticky; /*Colável*/
+            top: -1px; /*Deslocar 1 px para cima para não ficar vão*/
+            background-color: gray;/*Cor igual ao thead*/
+
         }
 
         /*Efeito Zebrado é uma Pseudoclasse
