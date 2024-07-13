@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="i_nome">Nome:</label>
+            <input type="text" name="nome" id="i_nome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="i_media">Média:</label>
+            <input type="number" name="media" id="i_media" required min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="i_periodo">Período Letivo:</label>
+            <input type="month" name="periodo" id="i_periodo">
+        </p>
+        <p>
+            <label for="i_dia">Dia da prova:</label>
+            <input type="date" name="dia" id="i_dia">
+        </p>
+        <p>
+            <label for="i_hora">Horário da prova:</label>
+            <input type="time" name="hora" id="i_hora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+<!--URL Enviada
+http://127.0.0.1:5500/Modulo_4_de_5/cap24-ex025/cadastro.php?nome=José&media=9.5&periodo=2024-07&dia=2024-07-13&hora=12%3A46-->
+        </p>
+    </form>
+</body>
+</html>
