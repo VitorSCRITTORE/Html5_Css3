@@ -1,0 +1,69 @@
+/*arquivo style.css*/
+/*Chamada no Html para o arquivo style.css
+<link rel="stylesheet" href="estilo/style.css">*/
+@charset "UTF-8";
+
+/*Versão Mobile First*/
+
+/* Configurações Globais*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    background-color: lightgray;
+}
+header{
+    background-color: rgb(157, 157, 157);
+}
+body > header > h1{
+    padding: 10px;
+    text-align: center;
+}
+span#burger{
+    background-color: rgb(88, 88, 88);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burger:hover{
+    background-color: white;
+    color: black;
+}
+menu{
+    display: none;
+}
+menu > ul{
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(122, 122, 122);
+    color: white;
+    border-top: 2px solid rgb(162, 162, 162);
+}
+body > header > menu > ul > li > a:hover{
+    background-color: rgba(128, 128, 128, 0.443);
+}
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2{
+    padding-bottom: 20px;
+}
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
