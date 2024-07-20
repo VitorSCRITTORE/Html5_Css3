@@ -18,15 +18,48 @@ header{
     background-color: gray;
     color: white;
     padding: 10px;
+    border: 3px solid red;
+    
+    /*Configurações Flexbox*/
+
+    display: flex; /*Transforma em flexbox*/
+    flex-flow: row wrap; /*Define eixo em linha e com quebra*/
+    justify-content: space-between;/*Espaçamento igual entre eles, como possui apenas 2 items, aplica o espaçamento ao centro e cada item fica alinhada as bordas esquerda e direita*/
+    align-items: center;/*alinha os textos ao centro na vertical*/
 
 
 }
-header > h1{
+header > h1{ /*Título Meu Site*/
     border: 1px dotted black;
+    
+    /*Configurações Flexbox*/
+    
+    flex: 0 0 200px; /*flex: grow shrink basis, não crescer, não diminuir, tamanho fixo em 200px */
 }
-header > nav{
+header > nav{ /*Menu*/
     border: 1px dotted black;
+
+    /*Configurações Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;/*Alinhamento ao fim do container (menu ficará a direita da página)*/
 }
+header nav > a{ /*Menu > Links*/
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+header > nav > a:hover{ /*Quando mouse estiver sobre items do menu, efeitos de animação*/
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+
 main{
     background-color: white;
     margin: 10px;
