@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*Ativa quando a tela reduzir ao tamanho determinado na chamada: media="screen and (max-width: 600px)" */
+
+header, header > nav{
+    flex-flow: column nowrap;
+}
+
+header > h1{
+    flex-basis: 50px;
+}
+
+header > nav > a{
+    width: 90vw; /*ocupará o tamanho de 90% da largura total da tela*/
+}
